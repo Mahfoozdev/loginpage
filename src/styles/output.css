@@ -793,6 +793,10 @@ video {
           backdrop-filter: blur(20px);
 }
 
+.login-input + .login-label {
+  transition: all 0.5s ease;
+}
+
 .login-input:focus + .login-label,
 login-input:valid + .login-label {
   top: -20px;
