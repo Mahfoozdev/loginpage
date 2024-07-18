@@ -810,7 +810,7 @@ login-input:valid + .login-label {
   font-size: 11px;
 }
 
-button:hover {
+button {
   transition: 0.3s;
 }
 
