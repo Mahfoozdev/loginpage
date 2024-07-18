@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/output.css" />
+    <title>Login User</title>
+    <link rel="stylesheet" href="./styles/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,6 +45,7 @@
                 required
                 id="login-user"
                 class="login-input bg-transparent font-syne w-full outline-none"
+                autocomplete="off"
                 placeholder=" "
               />
               <label
@@ -62,6 +63,7 @@
               <input
                 type="email"
                 required
+                autocomplete="off"
                 id="login-email"
                 class="login-input bg-transparent font-syne w-full outline-none"
                 placeholder=" "
@@ -109,7 +111,7 @@
             class="border-[0.5px] rounded-full py-2 px-7 hover:px-10 hover:tracking-widest md:py-1"
             onclick="browse()"
           >
-            Choose img
+            Choose <span class="font-syne">image</span>
           </button>
 
           <button
