@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background-image: url(/src/img/bg-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-form {
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+}
+.login-input:focus + .login-label,
+login-input:valid + .login-label {
+  top: -20px;
+  font-size: 11px;
+  transition: all 0.5s;
+}
+.login-input:not(:placeholder-shown).login-input:not(:focus) + .login-label {
+  top: -20px;
+  font-size: 11px;
+}
+button:hover {
+  transition: 0.3s;
+}
+#result {
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  height: 500px;
+  width: auto;
+}
